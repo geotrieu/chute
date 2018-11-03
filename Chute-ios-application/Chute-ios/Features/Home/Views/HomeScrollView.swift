@@ -25,7 +25,7 @@ class HomeScrollView: UIScrollView {
         $0.text = "Trending"
     }
     
-    private let newsCard1 = HomeNewsCardView(viewModel: HomeNewsCardViewModel(titleLabel: "", description: "", imageName: ""))
+    private let newsCard1 = HomeNewsCardView(viewModel: HomeNewsCardViewModel(titleLabel: "'The most intellectual...", description: "During my years studying chimpanzees in Gombe national park in Tanzania I experienced the magic of the rainforest...", imageName: "newsCard1"))
     
     init() {
         super.init(frame: .zero)
