@@ -12,17 +12,11 @@ import Then
 
 class HomeViewController: UIViewController {
     
+    let statScrollView = HomeStatsScrollView()
+    
     let headerView = HomeHeaderView()
 
-    let scrollView = HomeStatsScrollView()
-    
-    let hotspotsLabel = UILabel().then {
-        $0.textColor = UI.Colors.blue
-        $0.font = UI.Font.demiBold(30)
-        $0.text = "Hotspots"
-    }
-    
-    let hotspotsView = HomeHotspotsCardView()
+    let homeScrollView = HomeScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +25,9 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        print("\(scrollView.contentSize) ---")
-        scrollView.contentSize = CGSize(width: 660, height: 100)
+        print("\(homeScrollView.contentSize) ---")
+        statScrollView.contentSize = CGSize(width: 660, height: 100)
+        homeScrollView.contentSize = CGSize(width: 375, height: 900)
     }
 }
 
@@ -41,14 +36,12 @@ extension HomeViewController {
         view.addSubview(headerView)
         headerView.easy.layout(Top(), Width(375), Height(100))
         
-        view.addSubview(scrollView)
-        scrollView.easy.layout(Top(5).to(headerView), Left(), Right(), Height(100))
+        view.addSubview(statScrollView)
+        statScrollView.easy.layout(Top(5).to(headerView), Left(), Right(), Height(100), Width(660))
         
-        view.addSubview(hotspotsLabel)
-        hotspotsLabel.easy.layout(Top(15).to(scrollView), Left(20))
+        view.addSubview(homeScrollView)
+        homeScrollView.easy.layout(Top(20).to(statScrollView), Height(900), Width(375), Bottom())
         
-        view.addSubview(hotspotsView)
-        hotspotsView.easy.layout(Top(20).to(hotspotsLabel), CenterX())
         
     }
 }
