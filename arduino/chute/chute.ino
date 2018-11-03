@@ -4,6 +4,9 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <ESP8266WiFi.h>
+#include <Servo.h> 
+ 
+Servo lidservo;
 
 //MQTT Details
 #define MQTT_SERVER "192.168.9.201"
@@ -31,6 +34,7 @@ LiquidCrystal_I2C lcd(0x3F, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);
 
 void setup(){
   Serial.begin(9600);
+  lidservo.attach(D8);
   //LCD Init
   lcd.begin(16,2);               // initialize the lcd 
   lcd.clear();
@@ -59,6 +63,11 @@ void loop(){
   arduinoprocess.toCharArray(arduinoprocesschar, arduinoprocess.length() + 1);
   if (mqttConnected) {
     if (arduinoprocess != "") {
+      if (arduinoprocess == "F25") {
+        CloseChute();
+      } else {
+        OpenChute();
+      }
       chute.publish(arduinoprocesschar);
       Serial.println(arduinoprocesschar);
     }
