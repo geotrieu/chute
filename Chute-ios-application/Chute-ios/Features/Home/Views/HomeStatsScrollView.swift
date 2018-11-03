@@ -13,7 +13,7 @@ class HomeStatsScrollView: UIScrollView {
     
     let cardView = HomeTreeSavedCardView(viewModel: HomeTreeSavedCardViewModel(imageName: "treeIcon", numOfTrees: "25"))
     
-    let testView = HomeTreeSavedCardView(viewModel: HomeTreeSavedCardViewModel(imageName: "treeIcon", numOfTrees: "25"))
+    let testView = HomeCommunityMembersCardView(viewModel: HomeCommunityMembersCardViewModel(imageName: "communityMembersIcon", numOfMembers: "10 000"))
     
     init() {
         super.init(frame: .zero)
