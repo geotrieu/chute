@@ -1,5 +1,5 @@
 bool OpenChute() {
-  lidservo.write(120);
+  lidservo.write(100);
   return false;
 }
 
