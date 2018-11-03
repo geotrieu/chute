@@ -12,6 +12,7 @@
 		53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */; };
 		53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */; };
 		53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A11218E108A0006B495 /* HomeStatsScrollView.swift */; };
+		53196A14218E18D00006B495 /* HomeHotspotsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */; };
 		532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CF289218D639800AAA7BD /* AppDelegate.swift */; };
 		532CF291218D639900AAA7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532CF290218D639900AAA7BD /* Assets.xcassets */; };
 		532CF294218D639900AAA7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532CF292218D639900AAA7BD /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 		53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardView.swift; sourceTree = "<group>"; };
 		53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardViewModel.swift; sourceTree = "<group>"; };
 		53196A11218E108A0006B495 /* HomeStatsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsScrollView.swift; sourceTree = "<group>"; };
+		53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHotspotsCardView.swift; sourceTree = "<group>"; };
 		532CF286218D639800AAA7BD /* Chute-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chute-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		532CF289218D639800AAA7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		532CF290218D639900AAA7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				53196A0A218E04440006B495 /* HomeHeaderView.swift */,
 				53196A11218E108A0006B495 /* HomeStatsScrollView.swift */,
 				53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */,
+				53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */,
 				532CF2B9218D6DF000AAA7BD /* ComingSoonViewController.swift in Sources */,
 				53196A08218E034F0006B495 /* HomeViewController.swift in Sources */,
+				53196A14218E18D00006B495 /* HomeHotspotsCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
