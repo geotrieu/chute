@@ -27,6 +27,8 @@
 		532CF2C0218D6DF000AAA7BD /* ScutoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CF2B4218D6DF000AAA7BD /* ScutoNavigationController.swift */; };
 		532CF2C4218D729800AAA7BD /* ChuteDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CF2C3218D729800AAA7BD /* ChuteDevice.swift */; };
 		532CF2C6218D77B700AAA7BD /* splash-view-controller-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 532CF2C5218D77B700AAA7BD /* splash-view-controller-animation.json */; };
+		5384DE80218E2573008D61DE /* HomeCommunityMembersCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE7F218E2573008D61DE /* HomeCommunityMembersCardView.swift */; };
+		5384DE82218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */; };
 		78434FE25230659193367BF9 /* Pods_Chute_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		532CF2B4218D6DF000AAA7BD /* ScutoNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScutoNavigationController.swift; sourceTree = "<group>"; };
 		532CF2C3218D729800AAA7BD /* ChuteDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuteDevice.swift; sourceTree = "<group>"; };
 		532CF2C5218D77B700AAA7BD /* splash-view-controller-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "splash-view-controller-animation.json"; sourceTree = "<group>"; };
+		5384DE7F218E2573008D61DE /* HomeCommunityMembersCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommunityMembersCardView.swift; sourceTree = "<group>"; };
+		5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommunityMembersCardViewModel.swift; sourceTree = "<group>"; };
 		94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chute_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +77,7 @@
 		53196A09218E041A0006B495 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5384DE7F218E2573008D61DE /* HomeCommunityMembersCardView.swift */,
 				53196A0A218E04440006B495 /* HomeHeaderView.swift */,
 				53196A11218E108A0006B495 /* HomeStatsScrollView.swift */,
 				53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */,
@@ -84,6 +89,7 @@
 		53196A0E218E097B0006B495 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */,
 				53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */,
 			);
 			path = ViewModels;
@@ -316,8 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				532CF2A6218D6AE200AAA7BD /* UIColor+HexValue.swift in Sources */,
+				5384DE80218E2573008D61DE /* HomeCommunityMembersCardView.swift in Sources */,
 				532CF2A0218D699700AAA7BD /* SplashViewController.swift in Sources */,
 				53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */,
+				5384DE82218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift in Sources */,
 				532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */,
 				532CF2BF218D6DF000AAA7BD /* HomeTabBarController.swift in Sources */,
 				532CF29E218D68AA00AAA7BD /* AppFlowController.swift in Sources */,
