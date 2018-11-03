@@ -11,9 +11,11 @@ import EasyPeasy
 
 class HomeStatsScrollView: UIScrollView {
     
-    let cardView = HomeTreeSavedCardView(viewModel: HomeTreeSavedCardViewModel(imageName: "treeIcon", numOfTrees: "25"))
+    let treeSavedCardView = HomeTreeSavedCardView(viewModel: HomeTreeSavedCardViewModel(imageName: "treeIcon", numOfTrees: "25"))
     
-    let testView = HomeCommunityMembersCardView(viewModel: HomeCommunityMembersCardViewModel(imageName: "communityMembersIcon", numOfMembers: "10 000"))
+    let communityMembersCardView = HomeCommunityMembersCardView(viewModel: HomeCommunityMembersCardViewModel(imageName: "communityMembersIcon", numOfMembers: "10 000"))
+    
+    let completedJobsCardView = HomeCompletedJobsCardView(viewModel: HomeCompletedJobsCardViewModel(imageName: "completedJobsIcon", numOfCompletedJobs: "25 000"))
     
     init() {
         super.init(frame: .zero)
@@ -37,11 +39,14 @@ extension HomeStatsScrollView {
 // MARK: - Layout Views
 extension HomeStatsScrollView {
     func layoutViews() {
-        addSubview(cardView)
-        cardView.easy.layout(Top(), Left(20), Width(300), Height(100))
+        addSubview(treeSavedCardView)
+        treeSavedCardView.easy.layout(Top(), Left(20), Width(300), Height(100))
         
-        addSubview(testView)
-        testView.easy.layout(Top(), Left(20).to(cardView), Width(300), Height(100))
+        addSubview(communityMembersCardView)
+        communityMembersCardView.easy.layout(Top(), Left(20).to(treeSavedCardView), Width(300), Height(100))
+        
+        addSubview(completedJobsCardView)
+        completedJobsCardView.easy.layout(Top(), Left(20).to(communityMembersCardView), Width(300), Height(100))
     }
 }
 

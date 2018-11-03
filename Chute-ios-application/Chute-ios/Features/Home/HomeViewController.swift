@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         print("\(homeScrollView.contentSize) ---")
-        statScrollView.contentSize = CGSize(width: 660, height: 100)
+        statScrollView.contentSize = CGSize(width: 980, height: 100)
         homeScrollView.contentSize = CGSize(width: 375, height: 900)
     }
 }
