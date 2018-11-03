@@ -25,6 +25,8 @@ class HomeScrollView: UIScrollView {
         $0.text = "Trending"
     }
     
+    private let newsCard1 = HomeNewsCardView(viewModel: HomeNewsCardViewModel(titleLabel: "", description: "", imageName: ""))
+    
     init() {
         super.init(frame: .zero)
         layoutViews()
@@ -56,6 +58,9 @@ extension HomeScrollView {
         
         addSubview(trendingLabel)
         trendingLabel.easy.layout(Top(20).to(hotspotsView), Left(20))
+        
+        addSubview(newsCard1)
+        newsCard1.easy.layout(Top(20).to(trendingLabel), Width(350), Height(200), CenterX())
         
     }
 }
