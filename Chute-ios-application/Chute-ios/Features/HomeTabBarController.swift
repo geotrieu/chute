@@ -16,6 +16,7 @@ class HomeTabBarController: UITabBarController {
     let csvc4 = ComingSoonViewController()
     let csvc5 = ComingSoonViewController()
     let homeViewController = HomeViewController()
+    let jobsFlowController = JobsFlowController()
     
     
     override func viewDidLoad() {
@@ -58,7 +59,7 @@ extension HomeTabBarController {
     }
     
     func createSecondViewController() -> UIViewController {
-        var navigationVC = ScutoNavigationController(rootViewController: csvc2)
+        var navigationVC = ScutoNavigationController(rootViewController: jobsFlowController)
         navigationVC = setupTabBarItem(for: navigationVC, title: "JOBS", imageName: "jobsIcon", selectedImageName: "")
         return navigationVC
     }
