@@ -20,7 +20,7 @@ class SplashViewController: UIViewController {
         
         let imageView = UIImageView(image: UIImage(named: "chuteLogo"))
         view.addSubview(imageView)
-        imageView.easy.layout(CenterX(), Width(375), Height(450), Top(150))
+        imageView.easy.layout(CenterX(), Width(375), Height(300), Top(150))
         
         let animationView = LOTAnimationView(name: "splash-view-controller-animation")
         self.view.addSubview(animationView)
