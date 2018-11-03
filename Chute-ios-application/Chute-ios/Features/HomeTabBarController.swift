@@ -15,6 +15,7 @@ class HomeTabBarController: UITabBarController {
     let csvc3 = ComingSoonViewController()
     let csvc4 = ComingSoonViewController()
     let csvc5 = ComingSoonViewController()
+    let homeViewController = HomeViewController()
     
     
     override func viewDidLoad() {
@@ -51,7 +52,7 @@ extension HomeTabBarController {
     }
     
     func createFirstViewController() -> UIViewController {
-        var navigationVC = ScutoNavigationController(rootViewController: csvc1)
+        var navigationVC = ScutoNavigationController(rootViewController: homeViewController)
         navigationVC = setupTabBarItem(for: navigationVC, title: "HOME", imageName: "homeIcon", selectedImageName: "")
         return navigationVC
     }

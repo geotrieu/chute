@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53196A08218E034F0006B495 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A07218E034F0006B495 /* HomeViewController.swift */; };
+		53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0A218E04440006B495 /* HomeHeaderView.swift */; };
+		53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */; };
+		53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */; };
+		53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A11218E108A0006B495 /* HomeStatsScrollView.swift */; };
 		532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CF289218D639800AAA7BD /* AppDelegate.swift */; };
 		532CF291218D639900AAA7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532CF290218D639900AAA7BD /* Assets.xcassets */; };
 		532CF294218D639900AAA7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532CF292218D639900AAA7BD /* LaunchScreen.storyboard */; };
@@ -27,6 +32,11 @@
 /* Begin PBXFileReference section */
 		0CF5201B1EF0BE418AE459C9 /* Pods-Chute-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chute-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chute-ios/Pods-Chute-ios.release.xcconfig"; sourceTree = "<group>"; };
 		409D1CFD7C0EF88B951D89D4 /* Pods-Chute-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chute-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chute-ios/Pods-Chute-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		53196A07218E034F0006B495 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53196A0A218E04440006B495 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardView.swift; sourceTree = "<group>"; };
+		53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardViewModel.swift; sourceTree = "<group>"; };
+		53196A11218E108A0006B495 /* HomeStatsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsScrollView.swift; sourceTree = "<group>"; };
 		532CF286218D639800AAA7BD /* Chute-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chute-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		532CF289218D639800AAA7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		532CF290218D639900AAA7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53196A09218E041A0006B495 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53196A0A218E04440006B495 /* HomeHeaderView.swift */,
+				53196A11218E108A0006B495 /* HomeStatsScrollView.swift */,
+				53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53196A0E218E097B0006B495 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		532CF27D218D639800AAA7BD = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +158,9 @@
 		532CF2A9218D6DC000AAA7BD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				532CF2B3218D6DF000AAA7BD /* HomeTabBarController.swift */,
+				532CF2AB218D6DF000AAA7BD /* ComingSoonViewController.swift */,
+				532CF2B4218D6DF000AAA7BD /* ScutoNavigationController.swift */,
 				532CF2AA218D6DF000AAA7BD /* Home */,
 			);
 			path = Features;
@@ -138,10 +169,10 @@
 		532CF2AA218D6DF000AAA7BD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				532CF2AB218D6DF000AAA7BD /* ComingSoonViewController.swift */,
 				532CF2B2218D6DF000AAA7BD /* HomeFlowController.swift */,
-				532CF2B3218D6DF000AAA7BD /* HomeTabBarController.swift */,
-				532CF2B4218D6DF000AAA7BD /* ScutoNavigationController.swift */,
+				53196A07218E034F0006B495 /* HomeViewController.swift */,
+				53196A09218E041A0006B495 /* Views */,
+				53196A0E218E097B0006B495 /* ViewModels */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -283,15 +314,20 @@
 			files = (
 				532CF2A6218D6AE200AAA7BD /* UIColor+HexValue.swift in Sources */,
 				532CF2A0218D699700AAA7BD /* SplashViewController.swift in Sources */,
+				53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */,
 				532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */,
 				532CF2BF218D6DF000AAA7BD /* HomeTabBarController.swift in Sources */,
 				532CF29E218D68AA00AAA7BD /* AppFlowController.swift in Sources */,
+				53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */,
 				532CF2A5218D6AE200AAA7BD /* UIViewController+AddRemoveChildren.swift in Sources */,
+				53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */,
 				532CF2A8218D6BA800AAA7BD /* UI.swift in Sources */,
 				532CF2C0218D6DF000AAA7BD /* ScutoNavigationController.swift in Sources */,
 				532CF2C4218D729800AAA7BD /* ChuteDevice.swift in Sources */,
 				532CF2BE218D6DF000AAA7BD /* HomeFlowController.swift in Sources */,
+				53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */,
 				532CF2B9218D6DF000AAA7BD /* ComingSoonViewController.swift in Sources */,
+				53196A08218E034F0006B495 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
