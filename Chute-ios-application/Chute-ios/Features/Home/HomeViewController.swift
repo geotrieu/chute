@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         print("\(scrollView.contentSize) ---")
-        scrollView.contentSize = CGSize(width: 660, height: 100)
+        scrollView.contentSize = CGSize(width: 980, height: 100)
     }
 }
 
