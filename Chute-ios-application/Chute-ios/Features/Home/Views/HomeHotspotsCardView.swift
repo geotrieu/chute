@@ -14,6 +14,9 @@ class HomeHotspotsCardView: UIView {
     
     private let contentView = UIView()
     
+    private let mapView = UIImageView().then {
+        $0.image = UIImage(named: "mapBackground")
+    }
     
     init() {
        // self.viewModel = viewModel
@@ -47,6 +50,9 @@ extension HomeHotspotsCardView {
     func layoutViews() {
         addSubview(contentView)
         contentView.easy.layout(Width(300), Height(300), Edges())
+        
+        contentView.addSubview(mapView)
+        mapView.easy.layout(Edges())
         
         
     }
