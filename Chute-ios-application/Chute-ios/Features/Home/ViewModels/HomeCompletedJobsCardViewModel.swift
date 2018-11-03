@@ -13,5 +13,5 @@ class HomeCompletedJobsCardViewModel {
     init(imageName: String, numOfCompletedJobs: String) {
         self.imageName = imageName
         self.numOfCompletedJobs = numOfCompletedJobs
-}
+    }
 }

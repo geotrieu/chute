@@ -33,6 +33,7 @@
 		5384DE82218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */; };
 		5384DE84218E2A7F008D61DE /* HomeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE83218E2A7F008D61DE /* HomeScrollView.swift */; };
 		5384DE86218E3F12008D61DE /* HomeNewsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE85218E3F12008D61DE /* HomeNewsCardView.swift */; };
+		5384DE88218E4207008D61DE /* HomeNewsCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */; };
 		78434FE25230659193367BF9 /* Pods_Chute_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommunityMembersCardViewModel.swift; sourceTree = "<group>"; };
 		5384DE83218E2A7F008D61DE /* HomeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScrollView.swift; sourceTree = "<group>"; };
 		5384DE85218E3F12008D61DE /* HomeNewsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardView.swift; sourceTree = "<group>"; };
+		5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardViewModel.swift; sourceTree = "<group>"; };
 		94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chute_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				5384DE81218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift */,
 				53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */,
 				440E4662218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift */,
+				5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				532CF2C0218D6DF000AAA7BD /* ScutoNavigationController.swift in Sources */,
 				532CF2C4218D729800AAA7BD /* ChuteDevice.swift in Sources */,
 				5384DE84218E2A7F008D61DE /* HomeScrollView.swift in Sources */,
+				5384DE88218E4207008D61DE /* HomeNewsCardViewModel.swift in Sources */,
 				532CF2BE218D6DF000AAA7BD /* HomeFlowController.swift in Sources */,
 				53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */,
 				532CF2B9218D6DF000AAA7BD /* ComingSoonViewController.swift in Sources */,

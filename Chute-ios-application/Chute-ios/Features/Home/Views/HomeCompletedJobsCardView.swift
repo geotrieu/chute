@@ -51,7 +51,7 @@ extension HomeCompletedJobsCardView {
         contentView.backgroundColor = UI.Colors.blue
         contentView.layer.cornerRadius = 5.0
         contentView.layer.shadowColor = UI.Colors.black.cgColor
-        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.shadowOpacity = 0.4
         contentView.layer.shadowRadius = 5.0
         contentView.layer.shadowOffset = CGSize(width: 0, height: 4)
     }
