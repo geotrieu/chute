@@ -9,7 +9,8 @@
 Servo lidservo;
 
 //MQTT Details
-#define MQTT_SERVER "198.91.141.54"
+//#define MQTT_SERVER "198.91.141.54"
+#define MQTT_SERVER "192.168.9.201"
 #define MQTT_PORT 1883                    
 #define MQTT_USERNAME "" 
 #define MQTT_PASSWORD "" 
