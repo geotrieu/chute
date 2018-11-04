@@ -6,13 +6,18 @@
 //  Copyright © 2018 Chute. All rights reserved.
 //
 
+
+
 import UIKit
 import EasyPeasy
 import Then
+import Foundation
 
 class JobsViewController: UIViewController {
     
     private let headerView = HomeHeaderView()
+    
+    //private let server = MosquittoServer()
     
     private let JobListingsLabel = UILabel().then {
         $0.textColor = UI.Colors.black
@@ -22,6 +27,8 @@ class JobsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         layoutViews()
     }
 }
