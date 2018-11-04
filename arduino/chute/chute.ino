@@ -97,7 +97,7 @@ void loop(){
   lcd.clear();
   lcd.print(arduinoprocess);
   //Serial.println(value);
-  delay(500); //Small delay
+  delay(100); //Small delay
 }
 
 String readSerial() {
