@@ -33,27 +33,86 @@ import Moscapsule
 class MosquittoServerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+}
+
+extension MosquittoServerController {
+    
+}
+
+extension MosquittoServerController {
+    func open(){
         let mqttConfig = MQTTConfig(clientId: "salopan", host: "192.168.9.201", port: 1883, keepAlive: 600)
         mqttConfig.mqttAuthOpts = MQTTAuthOpts(username: "", password: "")
         mqttConfig.cleanSession = true
+        mqttConfig.onMessageCallback = { mqttMessage in
+            //NSLog("MQTT Message received: payload=\(mqttMessage.payloadString?.first)")
+            print("\(mqttMessage.payloadString!)")
+        }
         
         let mqttClient = MQTT.newConnection(mqttConfig)
-        mqttConfig.onMessageCallback = { mqttMessage in
-            NSLog("MQTT Message received: payload=\(mqttMessage.payloadString)")
-        }
-        print("fuck salopan")
-        print("\(mqttClient.isConnected)")
-        //mqttClient.subscribe("chute", qos: 2)
         
+        //print("fuck salopan")
+        //print("\(mqttClient.isConnected)")
         
+        mqttClient.subscribe("chute", qos: 2)
         
-        let deadline = DispatchTime.now() + 3.0
+        //lol
+        let deadline = DispatchTime.now() + 2.0
         DispatchQueue.main.asyncAfter(deadline: deadline, execute: {
-            mqttClient.publish(string: "OPEN", topic: "chute-p", qos: 0, retain: false)
+            mqttClient.publish(string: "OPEN", topic: "chute-p", qos: 0, retain: true)
             print("\(mqttClient.isConnected)")
-            mqttClient.disconnect()
+    
         })
+    }
+    func close() {
+        let mqttConfig = MQTTConfig(clientId: "salopan", host: "192.168.9.201", port: 1883, keepAlive: 600)
+        mqttConfig.mqttAuthOpts = MQTTAuthOpts(username: "", password: "")
+        mqttConfig.cleanSession = true
+        mqttConfig.onMessageCallback = { mqttMessage in
+            //NSLog("MQTT Message received: payload=\(mqttMessage.payloadString?.first)")
+            print("\(mqttMessage.payloadString!)")
+        }
         
+        let mqttClient = MQTT.newConnection(mqttConfig)
+        
+        print("fuck salopan")
+        //print("\(mqttClient.isConnected)")
+        
+        mqttClient.subscribe("chute", qos: 2)
+        
+        //lol
+        let deadline = DispatchTime.now() + 2.0
+        DispatchQueue.main.asyncAfter(deadline: deadline, execute: {
+            mqttClient.publish(string: "CLOSE", topic: "chute-p", qos: 0, retain: true)
+            print("\(mqttClient.isConnected)")
+            
+        })
+    }
+    func auto() {
+        let mqttConfig = MQTTConfig(clientId: "salopan", host: "192.168.9.201", port: 1883, keepAlive: 600)
+        mqttConfig.mqttAuthOpts = MQTTAuthOpts(username: "", password: "")
+        mqttConfig.cleanSession = true
+        mqttConfig.onMessageCallback = { mqttMessage in
+            //NSLog("MQTT Message received: payload=\(mqttMessage.payloadString?.first)")
+            print("\(mqttMessage.payloadString!)")
+        }
+        
+        let mqttClient = MQTT.newConnection(mqttConfig)
+        
+        print("fuck salopan")
+        //print("\(mqttClient.isConnected)")
+        
+        mqttClient.subscribe("chute", qos: 2)
+        
+        //lol
+        let deadline = DispatchTime.now() + 2.0
+        DispatchQueue.main.asyncAfter(deadline: deadline, execute: {
+            mqttClient.publish(string: "AUTO", topic: "chute-p", qos: 0, retain: true)
+            print("\(mqttClient.isConnected)")
+            
+        })
     }
 }
 

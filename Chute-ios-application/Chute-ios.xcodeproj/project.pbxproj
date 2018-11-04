@@ -21,6 +21,14 @@
 		53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */; };
 		53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A11218E108A0006B495 /* HomeStatsScrollView.swift */; };
 		53196A14218E18D00006B495 /* HomeHotspotsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */; };
+		531B6022218ED9720058F0B6 /* CloseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6021218ED9720058F0B6 /* CloseButtonView.swift */; };
+		531B6024218EEAC30058F0B6 /* AllAvailableJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6023218EEAC30058F0B6 /* AllAvailableJobsViewController.swift */; };
+		531B6026218F0E260058F0B6 /* JobSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6025218F0E260058F0B6 /* JobSelectionViewController.swift */; };
+		531B6028218F10EC0058F0B6 /* AllAvailableJobsBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6027218F10EC0058F0B6 /* AllAvailableJobsBackButtonView.swift */; };
+		531B602A218F134F0058F0B6 /* JobSelectionBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B6029218F134F0058F0B6 /* JobSelectionBackButtonView.swift */; };
+		531B602C218F161C0058F0B6 /* JobCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B602B218F161C0058F0B6 /* JobCompleteView.swift */; };
+		531B602E218F195F0058F0B6 /* AllTrashCansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B602D218F195F0058F0B6 /* AllTrashCansViewController.swift */; };
+		531B6030218F1B8A0058F0B6 /* TrashCanBackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B602F218F1B8A0058F0B6 /* TrashCanBackButtonView.swift */; };
 		532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CF289218D639800AAA7BD /* AppDelegate.swift */; };
 		532CF291218D639900AAA7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532CF290218D639900AAA7BD /* Assets.xcassets */; };
 		532CF294218D639900AAA7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532CF292218D639900AAA7BD /* LaunchScreen.storyboard */; };
@@ -43,6 +51,11 @@
 		5384DE8B218E4804008D61DE /* JobsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE8A218E4804008D61DE /* JobsFlowController.swift */; };
 		5384DE8D218E48A7008D61DE /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE8C218E48A7008D61DE /* JobsViewController.swift */; };
 		53FDC905218E5D3B00F24F6B /* MosquittoServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC904218E5D3B00F24F6B /* MosquittoServerController.swift */; };
+		53FDC907218EA3C300F24F6B /* JobsViewAllJobsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC906218EA3C300F24F6B /* JobsViewAllJobsButtonView.swift */; };
+		53FDC909218EB04800F24F6B /* JobsViewAllTrashCansButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC908218EB04800F24F6B /* JobsViewAllTrashCansButtonView.swift */; };
+		53FDC90C218EB51200F24F6B /* AvailableJobCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC90B218EB51200F24F6B /* AvailableJobCardView.swift */; };
+		53FDC90E218EC08500F24F6B /* AvailableTrashCanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC90D218EC08500F24F6B /* AvailableTrashCanView.swift */; };
+		53FDC910218EC86C00F24F6B /* OpenButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC90F218EC86C00F24F6B /* OpenButtonView.swift */; };
 		78434FE25230659193367BF9 /* Pods_Chute_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +76,14 @@
 		53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardViewModel.swift; sourceTree = "<group>"; };
 		53196A11218E108A0006B495 /* HomeStatsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsScrollView.swift; sourceTree = "<group>"; };
 		53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHotspotsCardView.swift; sourceTree = "<group>"; };
+		531B6021218ED9720058F0B6 /* CloseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonView.swift; sourceTree = "<group>"; };
+		531B6023218EEAC30058F0B6 /* AllAvailableJobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAvailableJobsViewController.swift; sourceTree = "<group>"; };
+		531B6025218F0E260058F0B6 /* JobSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSelectionViewController.swift; sourceTree = "<group>"; };
+		531B6027218F10EC0058F0B6 /* AllAvailableJobsBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAvailableJobsBackButtonView.swift; sourceTree = "<group>"; };
+		531B6029218F134F0058F0B6 /* JobSelectionBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSelectionBackButtonView.swift; sourceTree = "<group>"; };
+		531B602B218F161C0058F0B6 /* JobCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCompleteView.swift; sourceTree = "<group>"; };
+		531B602D218F195F0058F0B6 /* AllTrashCansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTrashCansViewController.swift; sourceTree = "<group>"; };
+		531B602F218F1B8A0058F0B6 /* TrashCanBackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashCanBackButtonView.swift; sourceTree = "<group>"; };
 		532CF286218D639800AAA7BD /* Chute-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chute-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		532CF289218D639800AAA7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		532CF290218D639900AAA7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +108,11 @@
 		5384DE8A218E4804008D61DE /* JobsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsFlowController.swift; sourceTree = "<group>"; };
 		5384DE8C218E48A7008D61DE /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
 		53FDC904218E5D3B00F24F6B /* MosquittoServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosquittoServerController.swift; sourceTree = "<group>"; };
+		53FDC906218EA3C300F24F6B /* JobsViewAllJobsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewAllJobsButtonView.swift; sourceTree = "<group>"; };
+		53FDC908218EB04800F24F6B /* JobsViewAllTrashCansButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewAllTrashCansButtonView.swift; sourceTree = "<group>"; };
+		53FDC90B218EB51200F24F6B /* AvailableJobCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableJobCardView.swift; sourceTree = "<group>"; };
+		53FDC90D218EC08500F24F6B /* AvailableTrashCanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTrashCanView.swift; sourceTree = "<group>"; };
+		53FDC90F218EC86C00F24F6B /* OpenButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenButtonView.swift; sourceTree = "<group>"; };
 		94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chute_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,8 +258,29 @@
 			children = (
 				5384DE8A218E4804008D61DE /* JobsFlowController.swift */,
 				5384DE8C218E48A7008D61DE /* JobsViewController.swift */,
+				531B6023218EEAC30058F0B6 /* AllAvailableJobsViewController.swift */,
+				531B6027218F10EC0058F0B6 /* AllAvailableJobsBackButtonView.swift */,
+				531B6025218F0E260058F0B6 /* JobSelectionViewController.swift */,
+				531B6029218F134F0058F0B6 /* JobSelectionBackButtonView.swift */,
+				531B602D218F195F0058F0B6 /* AllTrashCansViewController.swift */,
+				531B602F218F1B8A0058F0B6 /* TrashCanBackButtonView.swift */,
+				53FDC90A218EB40000F24F6B /* Views */,
 			);
 			path = Jobs;
+			sourceTree = "<group>";
+		};
+		53FDC90A218EB40000F24F6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53FDC906218EA3C300F24F6B /* JobsViewAllJobsButtonView.swift */,
+				53FDC908218EB04800F24F6B /* JobsViewAllTrashCansButtonView.swift */,
+				53FDC90B218EB51200F24F6B /* AvailableJobCardView.swift */,
+				53FDC90D218EC08500F24F6B /* AvailableTrashCanView.swift */,
+				53FDC90F218EC86C00F24F6B /* OpenButtonView.swift */,
+				531B6021218ED9720058F0B6 /* CloseButtonView.swift */,
+				531B602B218F161C0058F0B6 /* JobCompleteView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A5ECAB840A3539ED36EDA60B /* Frameworks */ = {
@@ -373,33 +420,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531B602E218F195F0058F0B6 /* AllTrashCansViewController.swift in Sources */,
 				5384DE86218E3F12008D61DE /* HomeNewsCardView.swift in Sources */,
 				532CF2A6218D6AE200AAA7BD /* UIColor+HexValue.swift in Sources */,
 				5384DE80218E2573008D61DE /* HomeCommunityMembersCardView.swift in Sources */,
+				53FDC907218EA3C300F24F6B /* JobsViewAllJobsButtonView.swift in Sources */,
 				532CF2A0218D699700AAA7BD /* SplashViewController.swift in Sources */,
+				531B6026218F0E260058F0B6 /* JobSelectionViewController.swift in Sources */,
 				53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */,
+				531B602C218F161C0058F0B6 /* JobCompleteView.swift in Sources */,
 				5384DE82218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift in Sources */,
 				440E4665218E59AA00CF6B36 /* HomeNewsCardBView.swift in Sources */,
 				440E466F218E60A100CF6B36 /* HomeNewsCardDViewModel.swift in Sources */,
 				532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */,
+				53FDC90E218EC08500F24F6B /* AvailableTrashCanView.swift in Sources */,
 				5384DE8B218E4804008D61DE /* JobsFlowController.swift in Sources */,
+				531B6030218F1B8A0058F0B6 /* TrashCanBackButtonView.swift in Sources */,
 				440E4667218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift in Sources */,
 				532CF2BF218D6DF000AAA7BD /* HomeTabBarController.swift in Sources */,
+				531B6024218EEAC30058F0B6 /* AllAvailableJobsViewController.swift in Sources */,
+				53FDC910218EC86C00F24F6B /* OpenButtonView.swift in Sources */,
 				440E4661218E295500CF6B36 /* HomeCompletedJobsCardView.swift in Sources */,
 				440E4669218E5E7200CF6B36 /* HomeNewsCardCView.swift in Sources */,
+				531B6028218F10EC0058F0B6 /* AllAvailableJobsBackButtonView.swift in Sources */,
 				532CF29E218D68AA00AAA7BD /* AppFlowController.swift in Sources */,
 				53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */,
 				53FDC905218E5D3B00F24F6B /* MosquittoServerController.swift in Sources */,
 				532CF2A5218D6AE200AAA7BD /* UIViewController+AddRemoveChildren.swift in Sources */,
+				531B602A218F134F0058F0B6 /* JobSelectionBackButtonView.swift in Sources */,
 				440E466B218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift in Sources */,
 				53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */,
+				531B6022218ED9720058F0B6 /* CloseButtonView.swift in Sources */,
 				532CF2A8218D6BA800AAA7BD /* UI.swift in Sources */,
 				440E4663218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift in Sources */,
 				532CF2C0218D6DF000AAA7BD /* ScutoNavigationController.swift in Sources */,
 				532CF2C4218D729800AAA7BD /* ChuteDevice.swift in Sources */,
 				5384DE84218E2A7F008D61DE /* HomeScrollView.swift in Sources */,
+				53FDC90C218EB51200F24F6B /* AvailableJobCardView.swift in Sources */,
 				5384DE88218E4207008D61DE /* HomeNewsCardViewModel.swift in Sources */,
 				440E466D218E608D00CF6B36 /* HomeNewsCardDView.swift in Sources */,
+				53FDC909218EB04800F24F6B /* JobsViewAllTrashCansButtonView.swift in Sources */,
 				5384DE8D218E48A7008D61DE /* JobsViewController.swift in Sources */,
 				532CF2BE218D6DF000AAA7BD /* HomeFlowController.swift in Sources */,
 				53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */,

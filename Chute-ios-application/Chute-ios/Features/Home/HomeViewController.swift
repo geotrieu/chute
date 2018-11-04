@@ -40,7 +40,7 @@ extension HomeViewController {
         statScrollView.easy.layout(Top(5).to(headerView), Left(), Right(), Height(100), Width(660))
         
         view.addSubview(homeScrollView)
-        homeScrollView.easy.layout(Top(20).to(statScrollView), Height(900), Width(375), Bottom())
+        homeScrollView.easy.layout(Top().to(statScrollView), Height(900), Width(375), Bottom())
         
         
     }
