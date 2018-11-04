@@ -36,6 +36,7 @@
 		5384DE88218E4207008D61DE /* HomeNewsCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */; };
 		5384DE8B218E4804008D61DE /* JobsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE8A218E4804008D61DE /* JobsFlowController.swift */; };
 		5384DE8D218E48A7008D61DE /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384DE8C218E48A7008D61DE /* JobsViewController.swift */; };
+		53FDC905218E5D3B00F24F6B /* MosquittoServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC904218E5D3B00F24F6B /* MosquittoServerController.swift */; };
 		78434FE25230659193367BF9 /* Pods_Chute_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardViewModel.swift; sourceTree = "<group>"; };
 		5384DE8A218E4804008D61DE /* JobsFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsFlowController.swift; sourceTree = "<group>"; };
 		5384DE8C218E48A7008D61DE /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		53FDC904218E5D3B00F24F6B /* MosquittoServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosquittoServerController.swift; sourceTree = "<group>"; };
 		94A2D4775DE4C170A97C044A /* Pods_Chute_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chute_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 		532CF288218D639800AAA7BD /* Chute-ios */ = {
 			isa = PBXGroup;
 			children = (
+				53FDC904218E5D3B00F24F6B /* MosquittoServerController.swift */,
 				532CF295218D639900AAA7BD /* Info.plist */,
 				532CF292218D639900AAA7BD /* LaunchScreen.storyboard */,
 				532CF29F218D699700AAA7BD /* SplashViewController.swift */,
@@ -310,6 +313,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chute-ios/Pods-Chute-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/Moscapsule/Moscapsule.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
@@ -317,6 +321,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moscapsule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -362,6 +367,7 @@
 				440E4661218E295500CF6B36 /* HomeCompletedJobsCardView.swift in Sources */,
 				532CF29E218D68AA00AAA7BD /* AppFlowController.swift in Sources */,
 				53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */,
+				53FDC905218E5D3B00F24F6B /* MosquittoServerController.swift in Sources */,
 				532CF2A5218D6AE200AAA7BD /* UIViewController+AddRemoveChildren.swift in Sources */,
 				53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */,
 				532CF2A8218D6BA800AAA7BD /* UI.swift in Sources */,
@@ -515,7 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K57CQQ28F9;
+				DEVELOPMENT_TEAM = 8NK52B9LMW;
 				INFOPLIST_FILE = "Chute-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K57CQQ28F9;
+				DEVELOPMENT_TEAM = 8NK52B9LMW;
 				INFOPLIST_FILE = "Chute-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -12,6 +12,7 @@ import UIKit
 class JobsFlowController: UIViewController {
     
     private let jobsViewController = JobsViewController()
+    private let server = MosquittoServerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class JobsFlowController: UIViewController {
     
     func start() {
         add(childController: jobsViewController)
+        add(childController: server)
     }
 }
 
