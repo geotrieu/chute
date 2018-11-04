@@ -1,15 +1,3 @@
-// Wire Master Writer
-// by Nicholas Zambetti <http://www.zambetti.com>
-
-// Demonstrates use of the Wire library
-// Writes data to an I2C/TWI slave device
-// Refer to the "Wire Slave Receiver" example for use with this
-
-// Created 29 March 2006
-
-// This example code is in the public domain.
-
-
 void setup() {
   Serial.begin(9600);
   pinMode(A0, INPUT_PULLUP);
@@ -22,11 +10,20 @@ void setup() {
 
 
 void loop() {
-  int value = analogRead(A0);
-  if (value >= 950) {
-    Serial.println("F25");
+  int twentyfive = analogRead(A0);
+  int fifty = analogRead(A1);
+  int seventyfive = analogRead(A3);
+  int hundred = analogRead(A5);
+  if (hundred >= 950) {
+    Serial.println("F100");
+  } else if (seventyfive >= 950) {
+    Serial.println("F75");
+  } else if (fifty >= 950) {
+    Serial.println("F50");
+  } else if (twentyfive >= 250) {
+    Serial.println("F25");  
   } else {
-    Serial.println(value); //Write the serial data
+    Serial.println("F0"); //Write the serial data
   }
   delay(500);
 }
