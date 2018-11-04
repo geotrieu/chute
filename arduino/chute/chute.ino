@@ -39,7 +39,7 @@ void setup(){
   lidservo.attach(D8);
   //LCD Init
   lcd.begin(16,2);               // initialize the lcd 
-  lcd.clear();
+  writeNormal();
 
   WiFi.begin(ssid, password);     //Connect to your WiFi router
   Serial.println("");
@@ -67,12 +67,16 @@ void loop(){
         Serial.println(lastread);
         if (lastread == "OPEN") {
           OpenChute();
+          writeNormal();
+          lcd.print("*");
           isManual = true;
         } else if (lastread == "CLOSE") {
           CloseChute();
+          writeFull();
           isManual = true;
         } else if (lastread == "AUTO") {
           isManual = false;
+          writeNormal();
         }
       }
     }
@@ -85,6 +89,8 @@ void loop(){
       if (arduinoprocess == "F100") {
         if (!isManual)
           CloseChute();
+          writeFull();
+          isManual = true;
       } else {
         if (!isManual)
           OpenChute();
@@ -94,10 +100,6 @@ void loop(){
     }
     //chute.publish(value);
   }
-  lcd.clear();
-  lcd.print(arduinoprocess);
-  lcd.setCursor ( 0, 1 );
-  lcd.print(isManual);
   //Serial.println(value);
   delay(1000); //Small delay
 }
@@ -113,3 +115,20 @@ String readSerial() {
   }
   return input;
 }
+
+void writeFull() {
+  lcd.clear();
+  lcd.home();
+  lcd.print("Sorry, this can");
+  lcd.setCursor(0,1);
+  lcd.print("is full.");
+}
+
+void writeNormal() {
+  lcd.clear();
+  lcd.home();
+  lcd.print("Chutes");
+  lcd.setCursor(0,1);
+  lcd.print("Smart Trash Can");
+}
+
