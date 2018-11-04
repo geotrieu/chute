@@ -11,5 +11,5 @@ The iOS app is designed with a highly usable UI for both aesthetics and usabilit
 The app has 'community' information to build a sense of greater purpose beyond the monetary gain. The data shown gives an insight on how much the enironment has been aided, how much others have done, and how much the individual has done to help the cause. 
 
 Photos of our product:
-![alt text](https://imgur.com/a/ejSQsn0)
+![alt text](https://i.imgur.com/WB7QxTE.jpg)
 
