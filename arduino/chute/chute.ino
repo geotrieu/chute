@@ -92,9 +92,34 @@ void loop(){
           CloseChute();
           writeFull();
           isManual = true;
+      } else if (arduinoprocess == "F75") {
+        lcd.clear();
+        lcd.home();
+        lcd.print("Chute Status:");
+        lcd.setCursor(0,1);
+        lcd.print("75% Full");
+        if (!isManual)
+          OpenChute();
+      } else if (arduinoprocess == "F50") {
+        lcd.clear();
+        lcd.home();
+        lcd.print("Chute Status:");
+        lcd.setCursor(0,1);
+        lcd.print("50% Full");  
+        if (!isManual)
+          OpenChute();
+      } else if (arduinoprocess == "F25") {
+        lcd.clear();
+        lcd.home();
+        lcd.print("Chute Status:");
+        lcd.setCursor(0,1);
+        lcd.print("25% Full");
+        if (!isManual)
+          OpenChute();
       } else {
         if (!isManual)
           OpenChute();
+        writeNormal();
       }
       chute.publish(arduinoprocesschar);
       Serial.println(arduinoprocesschar);
