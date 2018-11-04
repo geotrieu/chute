@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		440E4661218E295500CF6B36 /* HomeCompletedJobsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4660218E295500CF6B36 /* HomeCompletedJobsCardView.swift */; };
 		440E4663218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4662218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift */; };
+		440E4665218E59AA00CF6B36 /* HomeNewsCardBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4664218E59AA00CF6B36 /* HomeNewsCardBView.swift */; };
+		440E4667218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4666218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift */; };
+		440E4669218E5E7200CF6B36 /* HomeNewsCardCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4668218E5E7200CF6B36 /* HomeNewsCardCView.swift */; };
+		440E466B218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E466A218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift */; };
+		440E466D218E608D00CF6B36 /* HomeNewsCardDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E466C218E608D00CF6B36 /* HomeNewsCardDView.swift */; };
+		440E466F218E60A100CF6B36 /* HomeNewsCardDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E466E218E60A100CF6B36 /* HomeNewsCardDViewModel.swift */; };
 		53196A08218E034F0006B495 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A07218E034F0006B495 /* HomeViewController.swift */; };
 		53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0A218E04440006B495 /* HomeHeaderView.swift */; };
 		53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */; };
@@ -44,6 +50,12 @@
 		409D1CFD7C0EF88B951D89D4 /* Pods-Chute-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chute-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chute-ios/Pods-Chute-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		440E4660218E295500CF6B36 /* HomeCompletedJobsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompletedJobsCardView.swift; sourceTree = "<group>"; };
 		440E4662218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompletedJobsCardViewModel.swift; sourceTree = "<group>"; };
+		440E4664218E59AA00CF6B36 /* HomeNewsCardBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardBView.swift; sourceTree = "<group>"; };
+		440E4666218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardBViewModel.swift; sourceTree = "<group>"; };
+		440E4668218E5E7200CF6B36 /* HomeNewsCardCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardCView.swift; sourceTree = "<group>"; };
+		440E466A218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardCViewModel.swift; sourceTree = "<group>"; };
+		440E466C218E608D00CF6B36 /* HomeNewsCardDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardDView.swift; sourceTree = "<group>"; };
+		440E466E218E60A100CF6B36 /* HomeNewsCardDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCardDViewModel.swift; sourceTree = "<group>"; };
 		53196A07218E034F0006B495 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		53196A0A218E04440006B495 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTreeSavedCardView.swift; sourceTree = "<group>"; };
@@ -97,8 +109,11 @@
 				53196A0C218E09070006B495 /* HomeTreeSavedCardView.swift */,
 				440E4660218E295500CF6B36 /* HomeCompletedJobsCardView.swift */,
 				53196A13218E18D00006B495 /* HomeHotspotsCardView.swift */,
+				440E466C218E608D00CF6B36 /* HomeNewsCardDView.swift */,
 				5384DE83218E2A7F008D61DE /* HomeScrollView.swift */,
+				440E4668218E5E7200CF6B36 /* HomeNewsCardCView.swift */,
 				5384DE85218E3F12008D61DE /* HomeNewsCardView.swift */,
+				440E4664218E59AA00CF6B36 /* HomeNewsCardBView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +125,9 @@
 				53196A0F218E09A30006B495 /* HomeTreeSavedCardViewModel.swift */,
 				440E4662218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift */,
 				5384DE87218E4207008D61DE /* HomeNewsCardViewModel.swift */,
+				440E4666218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift */,
+				440E466A218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift */,
+				440E466E218E60A100CF6B36 /* HomeNewsCardDViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -356,13 +374,18 @@
 				532CF2A0218D699700AAA7BD /* SplashViewController.swift in Sources */,
 				53196A0B218E04440006B495 /* HomeHeaderView.swift in Sources */,
 				5384DE82218E2581008D61DE /* HomeCommunityMembersCardViewModel.swift in Sources */,
+				440E4665218E59AA00CF6B36 /* HomeNewsCardBView.swift in Sources */,
+				440E466F218E60A100CF6B36 /* HomeNewsCardDViewModel.swift in Sources */,
 				532CF28A218D639800AAA7BD /* AppDelegate.swift in Sources */,
 				5384DE8B218E4804008D61DE /* JobsFlowController.swift in Sources */,
+				440E4667218E59BB00CF6B36 /* HomeNewsCardBViewModel.swift in Sources */,
 				532CF2BF218D6DF000AAA7BD /* HomeTabBarController.swift in Sources */,
 				440E4661218E295500CF6B36 /* HomeCompletedJobsCardView.swift in Sources */,
+				440E4669218E5E7200CF6B36 /* HomeNewsCardCView.swift in Sources */,
 				532CF29E218D68AA00AAA7BD /* AppFlowController.swift in Sources */,
 				53196A12218E108A0006B495 /* HomeStatsScrollView.swift in Sources */,
 				532CF2A5218D6AE200AAA7BD /* UIViewController+AddRemoveChildren.swift in Sources */,
+				440E466B218E5E8500CF6B36 /* HomeNewsCardCViewModel.swift in Sources */,
 				53196A10218E09A30006B495 /* HomeTreeSavedCardViewModel.swift in Sources */,
 				532CF2A8218D6BA800AAA7BD /* UI.swift in Sources */,
 				440E4663218E296D00CF6B36 /* HomeCompletedJobsCardViewModel.swift in Sources */,
@@ -370,6 +393,7 @@
 				532CF2C4218D729800AAA7BD /* ChuteDevice.swift in Sources */,
 				5384DE84218E2A7F008D61DE /* HomeScrollView.swift in Sources */,
 				5384DE88218E4207008D61DE /* HomeNewsCardViewModel.swift in Sources */,
+				440E466D218E608D00CF6B36 /* HomeNewsCardDView.swift in Sources */,
 				5384DE8D218E48A7008D61DE /* JobsViewController.swift in Sources */,
 				532CF2BE218D6DF000AAA7BD /* HomeFlowController.swift in Sources */,
 				53196A0D218E09070006B495 /* HomeTreeSavedCardView.swift in Sources */,

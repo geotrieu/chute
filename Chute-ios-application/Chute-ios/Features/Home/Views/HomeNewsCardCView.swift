@@ -1,8 +1,8 @@
 //
-//  HomeNewsCardView.swift
+//  HomeNewsCardCView.swift
 //  Chute-ios
 //
-//  Created by Thayallan Srinathan on 2018-11-03.
+//  Created by Salopan Vimalaruban on 2018-11-03.
 //  Copyright © 2018 Chute. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import UIKit
 import EasyPeasy
 import Then
 
-class HomeNewsCardView: UIView {
+class HomeNewsCardCView: UIView {
     
-    private let viewModel: HomeNewsCardViewModel
+    private let viewModel: HomeNewsCardCViewModel
     
     private let contentView = UIView()
     
@@ -31,7 +31,7 @@ class HomeNewsCardView: UIView {
         $0.contentMode = .scaleToFill
     }
     
-    init(viewModel: HomeNewsCardViewModel) {
+    init(viewModel: HomeNewsCardCViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
         
@@ -49,7 +49,7 @@ class HomeNewsCardView: UIView {
 }
 
 // MARK: - Setup Properties
-extension HomeNewsCardView {
+extension HomeNewsCardCView {
     func setupProperties() {
         contentView.backgroundColor = UI.Colors.white
         contentView.layer.cornerRadius = 5.0
@@ -61,7 +61,7 @@ extension HomeNewsCardView {
 }
 
 // MARK: - Layout Views
-extension HomeNewsCardView {
+extension HomeNewsCardCView {
     func layoutViews() {
         addSubview(contentView)
         contentView.easy.layout(Width(350), Height(100))
@@ -74,9 +74,11 @@ extension HomeNewsCardView {
         
         contentView.addSubview(imageView)
         imageView.easy.layout(Top(5), LeftMargin(250), RightMargin(100), Width(95), Height(90))
-       
+        
     }
 }
+
+
 
 
 
