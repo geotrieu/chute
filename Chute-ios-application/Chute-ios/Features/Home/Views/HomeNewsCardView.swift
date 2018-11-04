@@ -18,12 +18,13 @@ class HomeNewsCardView: UIView {
     
     private let titleLabel = UILabel().then {
         $0.textColor = UI.Colors.blue
-        $0.font = UI.Font.demiBold(18)
+        $0.font = UI.Font.demiBold(25)
     }
     
     private let descriptionLabel = UILabel().then {
         $0.textColor = UI.Colors.lightGrey
-        $0.font = UI.Font.regular(10)
+        $0.font = UI.Font.regular(20)
+        $0.numberOfLines = 0
     }
     
     private let imageView = UIImageView().then {
@@ -65,6 +66,11 @@ extension HomeNewsCardView {
         addSubview(contentView)
         contentView.easy.layout(Width(350), Height(200))
         
+        contentView.addSubview(titleLabel)
+        titleLabel.easy.layout(Top(5), LeftMargin(5), RightMargin(50))
+        
+        contentView.addSubview(descriptionLabel)
+        descriptionLabel.easy.layout(Top(10).to(titleLabel), LeftMargin(5), RightMargin(50))
        
     }
 }
