@@ -9,7 +9,7 @@
 Servo lidservo;
 
 //MQTT Details
-#define MQTT_SERVER "192.168.9.201"
+#define MQTT_SERVER "198.91.141.54"
 #define MQTT_PORT 1883                    
 #define MQTT_USERNAME "" 
 #define MQTT_PASSWORD "" 
@@ -96,8 +96,10 @@ void loop(){
   }
   lcd.clear();
   lcd.print(arduinoprocess);
+  lcd.setCursor ( 0, 1 );
+  lcd.print(isManual);
   //Serial.println(value);
-  delay(100); //Small delay
+  delay(1000); //Small delay
 }
 
 String readSerial() {
