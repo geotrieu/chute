@@ -1,5 +1,5 @@
 # chute
-ECHacks 2018
+!ECHacks 2018
 A smart garbage can that detects when the bin is full using sensors powered buy an Arduino.
 When light sensors detect that bin is full, close the lid using an attached motor.
 Send a notification to all users of the iOS app who are currently accepting jobs.
