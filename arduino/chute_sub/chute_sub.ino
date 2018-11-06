@@ -17,7 +17,7 @@ void loop() {
   int fifty = analogRead(A1);
   int seventyfive = analogRead(A3);
   int hundred = analogRead(A5);
-  if (hundred >= 950) {
+  if (hundred >= 850) {
     if (numInRow == 2 && lastAttempt == "F100") {
       Serial.println("F100");
     } else if (lastAttempt == "F100") {
@@ -26,7 +26,7 @@ void loop() {
       lastAttempt = "F100";
       numInRow = 1;
     }
-  } else if (seventyfive >= 950) {
+  } else if (seventyfive >= 875) {
     if (numInRow == 2 && lastAttempt == "F75") {
       Serial.println("F75");
     } else if (lastAttempt == "F75") {
@@ -35,7 +35,7 @@ void loop() {
       lastAttempt = "F75";
       numInRow = 1;
     }
-  } else if (fifty >= 950) {
+  } else if (fifty >= 875) {
     if (numInRow == 2 && lastAttempt == "F50") {
       Serial.println("F50");
     } else if (lastAttempt == "F50") {
@@ -44,7 +44,7 @@ void loop() {
       lastAttempt = "F50";
       numInRow = 1;
     }
-  } else if (twentyfive >= 950) {
+  } else if (twentyfive >= 875) {
     if (numInRow == 2 && lastAttempt == "F25") {
       Serial.println("F25");
     } else if (lastAttempt == "F25") {
@@ -63,6 +63,7 @@ void loop() {
       numInRow = 1;
     }
   }
+  //Serial.println(twentyfive);
   delay(2000);
 }
 
